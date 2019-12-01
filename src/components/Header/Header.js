@@ -10,7 +10,7 @@ import './Header.scss';
 class Header extends Component {
     render() {
         return (
-            <div className='header-wrapper'>
+            <div id='header' className='header-wrapper'>
                 <div className='header-content'>
                     <h2>Sammy Chang</h2>
                     <div className='header-nav'>
