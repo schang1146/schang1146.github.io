@@ -25,25 +25,7 @@ const PORTFOLIO_DATA = [
         cardImg: 'https://i.stack.imgur.com/aJCJf.png',
         cardUpdated: '999 days',
         cardTags: 'Placeholder'
-    },
-    {
-        id: 4,
-        cardTitle: 'Dummy Project',
-        cardSubtitle: 'Totally Not A Fake Project',
-        cardText: 'Used !$%*() along with !)($) to create a 1!)#*249',
-        cardImg: 'https://i.stack.imgur.com/aJCJf.png',
-        cardUpdated: '999 days',
-        cardTags: 'Placeholder'
-    },
-    {
-        id: 5,
-        cardTitle: 'Dummy Project',
-        cardSubtitle: 'Totally Not A Fake Project',
-        cardText: 'Used !$%*() along with !)($) to create a 1!)#*249',
-        cardImg: 'https://i.stack.imgur.com/aJCJf.png',
-        cardUpdated: '999 days',
-        cardTags: 'Placeholder'
-    },
+    }
 ];
 
 export default PORTFOLIO_DATA;

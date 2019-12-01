@@ -10,9 +10,10 @@ class About extends Component {
             <div id='about' className='about-wrapper'>
                 <div className='about-content'>
                     <h2>About</h2>
+                    <hr />
                 </div>
             </div>
-        )
+        );
     }
 }
 

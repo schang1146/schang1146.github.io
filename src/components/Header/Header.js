@@ -15,9 +15,15 @@ class Header extends Component {
                     <h2>Sammy Chang</h2>
                     <div className='header-nav'>
                         <ButtonGroup>
-                            <Button outline color='secondary' size='lg' href='#about'>About</Button>
-                            <Button outline color='secondary' size='lg' href='#portfolio'>Portfolio</Button>
-                            <Button outline color='secondary' size='lg' href='#contact'>Contact</Button>
+                            <Button outline color='secondary' size='lg' href='#about'>
+                                About
+                            </Button>
+                            <Button outline color='secondary' size='lg' href='#portfolio'>
+                                Portfolio
+                            </Button>
+                            <Button outline color='secondary' size='lg' href='#contact'>
+                                Contact
+                            </Button>
                         </ButtonGroup>
                     </div>
                 </div>

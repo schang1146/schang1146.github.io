@@ -3,27 +3,46 @@
     height: 100vh;
 
     // flexbox
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .portfolio-wrapper .portfolio-content {
-	// flexbox
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
+    width: 80%;
+
+    // flexbox
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .portfolio-wrapper .portfolio-content .portfolio-cards {
-	// flexbox
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
+    // flexbox
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .card {
+        margin: 0 50px;
+    }
+}
+
+.portfolio-wrapper .portfolio-content .portfolio-tags {
+    // flexbox
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+        margin: 0 5px;
+    }
 }
