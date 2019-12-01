@@ -1,14 +1,21 @@
+// import dependencies
 import React, { Component } from 'react';
+
+// import components
+import { Button } from 'reactstrap';
+
+// import styling
+import './Navbar.scss';
 
 class Navbar extends Component {
     render() {
         return (
-            <div class='navbar-wrapper'>
-                <h2>Sammy Chang</h2>
-                <div class='navbar-links-wrapper'>
-                    <button class='navbar-link'>About</button>
-                    <button class='navbar-link'>Portfolio</button>
-                    <button class='navbar-link'>Contact</button>
+            <div className='navbar-wrapper'>
+                <h2> </h2>
+                <div className='navbar-links-wrapper'>
+                    <Button outline color='link' className='navbar-link'>About</Button>
+                    <Button outline color='link' className='navbar-link'>Portfolio</Button>
+                    <Button outline color='link' className='navbar-link'>Contact</Button>
                 </div>
             </div>
         );
