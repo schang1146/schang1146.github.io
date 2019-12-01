@@ -26,6 +26,9 @@ class Portfolio extends Component {
                     <h2>Portfolio</h2>
                     <div className='portfolio-tags'>
                         <Button color='secondary' size='sm'>
+                            All
+                        </Button>
+                        <Button color='secondary' size='sm'>
                             Web Development
                         </Button>
                         <Button color='secondary' size='sm'>
