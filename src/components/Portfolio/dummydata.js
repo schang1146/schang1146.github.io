@@ -1,12 +1,12 @@
 const PORTFOLIO_DATA = [
     {
         id: 1,
-        cardTitle: 'Dummy Project',
-        cardSubtitle: 'Totally Not A Fake Project',
-        cardText: 'Used !$%*() along with !)($) to create a 1!)#*249',
+        cardTitle: 'H3rra',
+        cardSubtitle: 'Wedding Planner',
+        cardText: '',
         cardImg: 'https://i.stack.imgur.com/aJCJf.png',
         cardUpdated: '999 days',
-        cardTags: 'Placeholder'
+        cardTags: 'Web Dev'
     },
     {
         id: 2,
