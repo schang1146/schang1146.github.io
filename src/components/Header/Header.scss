@@ -1,6 +1,11 @@
 .header-wrapper {
     height: 100vh;
 
+    // background
+    background-image: url('../../assets/images/header1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
     // flexbox
     display: flex;
     flex-direction: row;
@@ -12,6 +17,9 @@
 .header-wrapper .header-content {
     width: 60%;
     margin: auto auto;
+
+    // background
+    background-color: rgb(255, 255, 255, 0.25);
 
     // flexbox
     display: flex;
