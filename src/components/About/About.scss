@@ -1,7 +1,9 @@
+@use 'src/variables' as v;
+
 .about-wrapper {
     height: 100vh;
 
-    background-color: #ffbfbf;
+    background-color: v.$theme-bg2-color;
 
     // flexbox
     display: flex;
