@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 
 // import components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { Button } from 'reactstrap';
 
 // import styling
 import './Header.scss';
@@ -21,19 +21,26 @@ class Header extends Component {
                         Chang
                     </h1>
                     <div className='header-nav'>
-                        <Button outline color='link' size='lg' href='#about' className='header-links'>
+                        <a href='#about' className='header-links'>
                             About
-                        </Button>
-                        <Button outline color='link' size='lg' href='#portfolio' className='header-links'>
+                        </a>
+                        <a href='#portfolio' className='header-links'>
                             Portfolio
-                        </Button>
-                        <Button outline color='link' size='lg' href='#contact' className='header-links'>
+                        </a>
+                        <a href='#contact' className='header-links'>
                             Contact
-                        </Button>
+                        </a>
                     </div>
                     <div className='header-icons'>
-                        <FontAwesomeIcon icon={faLinkedin} size='2x' className='icon' />
-                        <FontAwesomeIcon icon={faEnvelope} size='2x' className='icon' />
+                        <a href="https://www.github.com/schang1146/">
+                            <FontAwesomeIcon icon={faGithub} size='2x' className='icon' />
+                        </a>
+                        <a href="https://www.linkedin.com/in/sammy-chang/">
+                            <FontAwesomeIcon icon={faLinkedin} size='2x' className='icon' />
+                        </a>
+                        <a href="mailto:sammychang2185@gmail.com">
+                            <FontAwesomeIcon icon={faEnvelope} size='2x' className='icon' />
+                        </a>
                     </div>
                 </div>
                 <div className='header-images'></div>

@@ -4,8 +4,26 @@
     max-width: 100vw;
 }
 
+a {
+    color: v.$theme-font-color;
+    &:hover {
+        color: v.$theme-font-color;
+        text-decoration: none;
+        animation: fadeOut ease 1s forwards;
+    }
+}
+
 hr {
     width: 100%;
     border-color: v.$theme-font-color;
     margin: 25px 0;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.25;
+    }
 }
