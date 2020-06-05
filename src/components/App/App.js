@@ -7,8 +7,8 @@ import './App.scss';
 // import components
 import Navbar from '../Navbar/Navbar';
 import Header from '../Header/Header';
-import About from '../About/About';
-import Portfolio from '../Portfolio/Portfolio';
+// import About from '../About/About';
+import Projects from '../Projects/Projects';
 
 class App extends Component {
     render() {
@@ -16,8 +16,8 @@ class App extends Component {
             <div className='app-wrapper'>
                 <Navbar />
                 <Header />
-                <About />
-                <Portfolio />
+                {/* <About /> */}
+                <Projects />
             </div>
         );
     }
