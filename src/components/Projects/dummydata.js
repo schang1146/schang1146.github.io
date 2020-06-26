@@ -15,7 +15,7 @@ const PORTFOLIO_DATA = [
         cardText: 'Used Vuejs along with Pusher to create a multiplayer Jeopardy game where you can invite up to three others to compete against.',
         cardImg: 'https://i.stack.imgur.com/aJCJf.png',
         cardUpdated: '999 days',
-        cardTags: 'Placeholder'
+        cardTags: 'Vuejs',
     },
     {
         id: 3,
