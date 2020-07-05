@@ -6,7 +6,7 @@ const PORTFOLIO_DATA = [
         cardText: '',
         cardImg: 'https://i.stack.imgur.com/aJCJf.png',
         cardUpdated: '999 days',
-        cardTags: 'Web Dev'
+        cardTags: 'Web Dev',
     },
     {
         id: 2,
@@ -19,12 +19,12 @@ const PORTFOLIO_DATA = [
     },
     {
         id: 3,
-        cardTitle: 'Dummy Project',
-        cardSubtitle: 'Totally Not A Fake Project',
-        cardText: 'Used !$%*() along with !)($) to create a 1!)#*249',
+        cardTitle: 'Game of Life',
+        cardSubtitle: '[no subtitle]',
+        cardText: 'Built Game of Life with canvas and implemented a manual double buffer.',
         cardImg: 'https://i.stack.imgur.com/aJCJf.png',
-        cardUpdated: '999 days',
-        cardTags: 'Placeholder'
+        cardUpdated: '0 days',
+        cardTags: 'Placeholder',
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const PORTFOLIO_DATA = [
         cardText: 'Used !$%*() along with !)($) to create a 1!)#*249',
         cardImg: 'https://i.stack.imgur.com/aJCJf.png',
         cardUpdated: '999 days',
-        cardTags: 'Web Dev'
+        cardTags: 'Web Dev',
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const PORTFOLIO_DATA = [
         cardText: 'Used !$%*() along with !)($) to create a 1!)#*249',
         cardImg: 'https://i.stack.imgur.com/aJCJf.png',
         cardUpdated: '999 days',
-        cardTags: 'Algorithms'
+        cardTags: 'Algorithms',
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const PORTFOLIO_DATA = [
         cardText: 'Used !$%*() along with !)($) to create a 1!)#*249',
         cardImg: 'https://i.stack.imgur.com/aJCJf.png',
         cardUpdated: '999 days',
-        cardTags: 'Algorithms'
+        cardTags: 'Algorithms',
     },
     {
         id: 7,
@@ -60,8 +60,8 @@ const PORTFOLIO_DATA = [
         cardText: 'Used !$%*() along with !)($) to create a 1!)#*249',
         cardImg: 'https://i.stack.imgur.com/aJCJf.png',
         cardUpdated: '999 days',
-        cardTags: 'Placeholder'
-    }
+        cardTags: 'Placeholder',
+    },
 ];
 
 export default PORTFOLIO_DATA;
