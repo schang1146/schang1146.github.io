@@ -10,7 +10,7 @@ import './ProjectsCard.scss';
 class ProjectsCard extends Component {
     render() {
         return (
-            <Col sm="4">
+            <Col sm='4'>
                 <Card className='projects-card-wrapper'>
                     {/* <Badge
                         color='danger'
@@ -22,13 +22,14 @@ class ProjectsCard extends Component {
                         {this.props.cardTags}
                     </Badge> */}
                     <CardBody>
-                        <CardTitle>{this.props.cardTitle}</CardTitle>
+                        <CardTitle>{this.props.title}</CardTitle>
                         <CardSubtitle>{this.props.cardSubtitle}</CardSubtitle>
-                        <CardText>{this.props.cardText}</CardText>
+                        <CardText>{this.props.description}</CardText>
                         <CardText>
                             <small className='text-muted'>Last updated {this.props.cardUpdated} ago</small>
                         </CardText>
                         <Button color='primary'>Go To Project</Button>
+                        <Button color='secondary'>Github</Button>
                     </CardBody>
                 </Card>
             </Col>
