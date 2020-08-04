@@ -16,13 +16,13 @@ class Navbar extends Component {
         return (
             <div className='navbar-wrapper'>
                 <div className='navbar-left'>
-                    <a href="https://www.github.com/schang1146/">
+                    <a href='https://www.github.com/schang1146/'>
                         <FontAwesomeIcon icon={faGithub} className='icon' size='2x' />
                     </a>
-                    <a href="https://www.linkedin.com/in/sammy-chang/">
+                    <a href='https://www.linkedin.com/in/sammy-chang/'>
                         <FontAwesomeIcon icon={faLinkedin} className='icon' size='2x' />
                     </a>
-                    <a href="mailto:sammychang2185@gmail.com">
+                    <a href='mailto:sammychang2185@gmail.com'>
                         <FontAwesomeIcon icon={faEnvelope} className='icon' size='2x' />
                     </a>
                 </div>
@@ -30,9 +30,15 @@ class Navbar extends Component {
                     <text className='light'>Sammy&nbsp;</text>Chang
                 </div> */}
                 <div className='navbar-right'>
-                    <Button outline color='link' className='navbar-link'>About</Button>
-                    <Button outline color='link' className='navbar-link'>Projects</Button>
-                    <Button outline color='link' className='navbar-link'>Contact</Button>
+                    <Button outline color='link' className='navbar-link'>
+                        About
+                    </Button>
+                    <Button outline color='link' className='navbar-link'>
+                        Projects
+                    </Button>
+                    <Button outline color='link' className='navbar-link'>
+                        Contact
+                    </Button>
                 </div>
             </div>
         );

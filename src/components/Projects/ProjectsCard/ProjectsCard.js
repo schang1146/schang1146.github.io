@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 // import components
-import { Card, CardText, CardBody, CardTitle, CardSubtitle, Button, Row, Col } from 'reactstrap';
+import { Card, CardText, CardBody, CardTitle, CardSubtitle, Button, Col } from 'reactstrap';
 
 // import styling
 import './ProjectsCard.scss';
