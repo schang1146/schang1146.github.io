@@ -28,8 +28,12 @@ class ProjectsCard extends Component {
                         <CardText>
                             <small className='text-muted'>Last updated {this.props.cardUpdated} ago</small>
                         </CardText>
-                        <Button color='primary'>Go To Project</Button>
-                        <Button color='secondary'>Github</Button>
+                        <Button outline color='primary'>
+                            Go To Project
+                        </Button>
+                        <Button outline color='secondary'>
+                            Github
+                        </Button>
                     </CardBody>
                 </Card>
             </Col>
