@@ -4,8 +4,9 @@ import React, { Component } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
 // import About from '../../components/About/About';
-import Contact from '../../components/Contact/Contact';
 import Projects from '../../components/Projects/Projects';
+import Contact from '../../components/Contact/Contact';
+import Footer from '../../components/Footer/Footer';
 
 class HomeView extends Component {
     render() {
@@ -16,6 +17,7 @@ class HomeView extends Component {
                 {/* <About /> */}
                 <Projects />
                 <Contact />
+                <Footer />
             </div>
         );
     }
