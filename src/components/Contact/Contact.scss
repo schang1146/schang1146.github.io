@@ -1,0 +1,75 @@
+input {
+    width: 48%;
+    border: none;
+    border-bottom: 1px black solid;
+
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+
+    font-size: 1.3rem;
+
+    &:focus {
+        border-bottom: 2px red solid;
+    }
+}
+
+.contact-wrapper {
+    margin-top: 13rem;
+
+    textarea:focus,
+    input:focus {
+        outline: none;
+    }
+
+    .contact-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .contact-form {
+        width: 63%;
+        margin-bottom: 5rem;
+
+        // flexbox
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .contact-form-top {
+            width: 100%;
+
+            // flexbox
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .contact-form-bottom {
+            width: 100%;
+
+            #yourMessage {
+                width: 100%;
+                padding-bottom: 3rem;
+            }
+        }
+    }
+
+    .contact-social-media {
+        // flexbox
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .icon {
+            margin-right: 2rem;
+        }
+    }
+}

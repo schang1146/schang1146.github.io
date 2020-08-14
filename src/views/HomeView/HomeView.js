@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
 // import About from '../../components/About/About';
+import Contact from '../../components/Contact/Contact';
 import Projects from '../../components/Projects/Projects';
 
 class HomeView extends Component {
@@ -14,6 +15,7 @@ class HomeView extends Component {
                 <Header />
                 {/* <About /> */}
                 <Projects />
+                <Contact />
             </div>
         );
     }

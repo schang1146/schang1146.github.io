@@ -1,15 +1,44 @@
-// .projects-card-wrapper {
-//     width: 250px;
-//     height: 500px;
-// }
+.projects-card-wrapper {
+    // position: absolute;
 
-// .projects-card-wrapper .projects-card-badge {
-//     position: relative;
-//     top: -225px;
-//     left: 130px;
-//     width: 100px;
+    border-radius: 0.3rem;
+    height: 21rem;
+    margin-bottom: 2rem;
 
-//     &:hover {
-//         cursor: pointer;
-//     }
-// }
+    // flexbox
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-image: url(https://external-preview.redd.it/9AWn6JJOzBSl3XLfNHCtEtfjaw3iUPriDltGV10P5A4.jpg?width=960&crop=smart&auto=webp&s=4dbe3c2326c7a3d249c622527a529f35167d2e28);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+
+    transition: all 0.5s ease;
+    // transition: height 0.3s ease;
+    // transition: width 0.3s ease;
+
+    color: white;
+
+    &:hover {
+        filter: none;
+    }
+
+    &:hover::before {
+        background-color: #f2849e;
+        opacity: 0.8;
+    }
+    &:hover::after {
+        opacity: 0.25;
+    }
+
+    .projects-card-title {
+        font-weight: bold;
+        letter-spacing: 0.3rem;
+        // color: white;
+    }
+}

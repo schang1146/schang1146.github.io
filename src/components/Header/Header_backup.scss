@@ -1,0 +1,78 @@
+@use 'src/variables' as v;
+
+.header-wrapper {
+    // flexbox
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    .header-content {
+        // size & placement
+        margin: 0 auto;
+
+        // flexbox
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        h1 {
+            color: v.$theme-font-color;
+        }
+
+        .lighter {
+            color: rgb(v.$theme-font-color, 0.75);
+        }
+
+        .header-nav {
+            margin-top: 25px;
+
+            // flexbox
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .header-links {
+                padding: 0px;
+
+                // font
+                font-size: 24px;
+            }
+        }
+
+        .header-icons {
+            margin-top: 10px;
+
+            // flexbox
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            .icon {
+                color: v.$theme-font-color;
+                margin: 0 10px;
+                &:first-child {
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+    }
+
+    .header-images {
+        width: 75%;
+        height: 100%;
+
+        // background
+        background-image: url('../../assets/images/header1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

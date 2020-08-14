@@ -2,8 +2,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+// import reactstrap components
+import { Row } from 'reactstrap';
+
 // import components
-import { Button, Row } from 'reactstrap';
 import ProjectsCard from './ProjectsCard/ProjectsCard';
 
 // import styling
@@ -32,8 +34,8 @@ class Projects extends Component {
         return (
             <div id='projects' className='projects-wrapper'>
                 <div className='projects-content'>
-                    <h2>Projects</h2>
-                    <div className='projects-tags'>
+                    <h2 className='projects-description'>Projects</h2>
+                    {/* <div className='projects-tags'>
                         <Button color='primary' size='sm' onClick={() => this.setState({ category: 'All' })} active={this.state.category === 'All'}>
                             All
                         </Button>
@@ -43,7 +45,7 @@ class Projects extends Component {
                         <Button color='primary' size='sm' onClick={() => this.setState({ category: 'Algo' })} active={this.state.category === 'Algo'}>
                             Algorithms
                         </Button>
-                    </div>
+                    </div> */}
                     <hr />
                     {/* To Do: Add cards to show off projects */}
                     <div className='projects-cards'>

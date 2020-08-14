@@ -7,7 +7,7 @@ import './App.scss';
 
 // import views
 import { HomeView } from '../../views';
-import { DevView } from '../../views';
+// import { DevView } from '../../views';
 // import { ProjectsView } from '../../views';
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
             <div className='app-wrapper'>
                 <Switch>
                     <Route exact path='/' render={() => <HomeView />} />
-                    <Route path='/dev' render={() => <DevView />} />
+                    {/* <Route path='/dev' render={() => <DevView />} /> */}
                 </Switch>
             </div>
         );
