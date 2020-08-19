@@ -46,7 +46,7 @@ class Projects extends Component {
                             Algorithms
                         </Button>
                     </div> */}
-                    <hr />
+                    {/* <hr /> */}
                     {/* To Do: Add cards to show off projects */}
                     <div className='projects-cards'>
                         <Row>

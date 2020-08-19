@@ -16,6 +16,13 @@ input {
 .contact-wrapper {
     margin-top: 13rem;
 
+    // flexbox
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
     textarea:focus,
     input:focus {
         outline: none;
@@ -24,52 +31,59 @@ input {
     .contact-title {
         font-size: 1.3rem;
         font-weight: bold;
-        letter-spacing: 0.5rem;
+        letter-spacing: 0.55rem;
         margin-bottom: 4rem;
     }
 
-    .contact-form {
+    .contact-left {
         width: 63%;
-        margin-bottom: 5rem;
 
-        // flexbox
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: flex-start;
-
-        .contact-form-top {
-            width: 100%;
+        .contact-form {
+            margin-bottom: 5rem;
 
             // flexbox
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: flex-start;
-        }
 
-        .contact-form-bottom {
-            width: 100%;
-
-            #yourMessage {
+            .contact-form-top {
                 width: 100%;
-                padding-bottom: 3rem;
+
+                // flexbox
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            .contact-form-bottom {
+                width: 100%;
+
+                #yourMessage {
+                    width: 100%;
+                    padding-bottom: 3rem;
+                }
             }
         }
     }
 
-    .contact-social-media {
-        // flexbox
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
+    .contact-right {
+        width: 27%;
 
-        .icon {
-            margin-right: 2rem;
+        .contact-social-media {
+            // flexbox
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .icon {
+                margin-right: 2rem;
+            }
         }
     }
 }
