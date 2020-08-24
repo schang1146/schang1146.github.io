@@ -1,4 +1,5 @@
-input {
+input,
+textarea {
     width: 48%;
     border: none;
     border-bottom: 1px #c9c9c9 solid;
@@ -11,6 +12,11 @@ input {
     &:focus {
         border-bottom: 1px #f55951 solid;
     }
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
 }
 
 .contact-wrapper {
@@ -67,6 +73,17 @@ input {
                     padding-bottom: 3rem;
                 }
             }
+
+            .custom-btn {
+                height: 3.7rem;
+                width: 7.1rem;
+
+                font-weight: bold;
+                letter-spacing: 0.35rem;
+
+                background-color: #543c52;
+                border-color: #543c52;
+            }
         }
     }
 
@@ -82,7 +99,19 @@ input {
             align-items: flex-start;
 
             .icon {
-                margin-right: 2rem;
+                width: 3.5rem;
+                height: 3.5rem;
+                border: 1px #c9c9c9 solid;
+                border-radius: 0.2rem;
+
+                color: #585858;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                margin-right: 1.7rem;
             }
         }
     }
