@@ -9,7 +9,6 @@ import './ProjectsCard.scss';
 
 class ProjectsCard extends Component {
     render() {
-        console.log(this.props);
         return (
             <Col sm='4'>
                 <article className='projects-card-wrapper'>
