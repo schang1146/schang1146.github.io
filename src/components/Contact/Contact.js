@@ -32,10 +32,10 @@ class Contact extends Component {
                 <div className='contact-right'>
                     <h2 className='contact-title'>FOLLOW</h2>
                     <div className='contact-social-media'>
-                        <a className='icon' href='https://www.github.com/schang1146/'>
+                        <a className='icon' href='https://www.github.com/schang1146/' target='_blank' rel='noopener noreferrer'>
                             <FontAwesomeIcon icon={faGithub} className='icon' size='2x' />
                         </a>
-                        <a className='icon' href='https://www.linkedin.com/in/sammy-chang/'>
+                        <a className='icon' href='https://www.linkedin.com/in/sammy-chang/' target='_blank' rel='noopener noreferrer'>
                             <FontAwesomeIcon icon={faLinkedin} className='icon' size='2x' />
                         </a>
                     </div>
