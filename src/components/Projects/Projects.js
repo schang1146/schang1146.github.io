@@ -17,6 +17,15 @@ import { getProjects } from '../../actions';
 // import dummy data
 import PROJECTS_DATA from './dummydata';
 
+const projectCardBackgroundColors = [
+    {
+        r: 242,
+        g: 132,
+        b: 158,
+        a: 0.8,
+    },
+];
+
 class Projects extends Component {
     constructor() {
         super();
@@ -52,7 +61,7 @@ class Projects extends Component {
                         <Row>
                             {this.props.projects.map((project) => {
                                 if (this.state.category === 'All' || project.cardTags === this.state.category) {
-                                    return <ProjectsCard key={project.id} {...project} />;
+                                    return <ProjectsCard key={project.id} {...project} bgColor={projectCardBackgroundColors[0]} />;
                                 } else {
                                     return undefined;
                                 }
