@@ -1,13 +1,15 @@
 .navbar-wrapper {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     margin: 0 auto;
 
     // flexbox
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
+    width: 100%;
+    max-width: 70%;
 
     .menu-btn {
         position: relative;
@@ -53,6 +55,8 @@
         }
     }
 }
+
+// animation
 
 .menu-btn.open .menu-btn__burger {
     transform: translateX(-50px);
