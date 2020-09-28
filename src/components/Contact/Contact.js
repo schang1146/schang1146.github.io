@@ -40,10 +40,10 @@ class Contact extends Component {
                     <h2 className='contact-title'>FOLLOW</h2>
                     <div className='contact-social-media'>
                         <a className='icon' href='https://www.github.com/schang1146/' target='_blank' rel='noopener noreferrer'>
-                            <FontAwesomeIcon icon={faGithub} size='2x' />
+                            <FontAwesomeIcon icon={faGithub} size='lg' />
                         </a>
                         <a className='icon' href='https://www.linkedin.com/in/sammy-chang/' target='_blank' rel='noopener noreferrer'>
-                            <FontAwesomeIcon icon={faLinkedin} size='2x' />
+                            <FontAwesomeIcon icon={faLinkedin} size='lg' />
                         </a>
                     </div>
                 </div>
