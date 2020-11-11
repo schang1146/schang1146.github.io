@@ -2,9 +2,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-// import reactstrap components
-import { Row } from 'reactstrap';
-
 // import components
 import ProjectsCard from './ProjectsCard/ProjectsCard';
 
@@ -43,30 +40,28 @@ class Projects extends Component {
         return (
             <div id='projects' className='projects-wrapper'>
                 <div className='projects-content'>
-                    <h2 className='projects-description'>Projects</h2>
-                    {/* <div className='projects-tags'>
-                        <Button color='primary' size='sm' onClick={() => this.setState({ category: 'All' })} active={this.state.category === 'All'}>
+                    <h2 className='projects-description'>PROJECTS</h2>
+                    <div className='projects-tags'>
+                        <button color='primary' onClick={() => this.setState({ category: 'All' })} active={this.state.category === 'All'}>
                             All
-                        </Button>
-                        <Button color='primary' size='sm' onClick={() => this.setState({ category: 'Web Dev' })} active={this.state.category === 'Web Dev'}>
+                        </button>
+                        <button onClick={() => this.setState({ category: 'Web Dev' })} active={this.state.category === 'Web Dev'}>
                             Web Development
-                        </Button>
-                        <Button color='primary' size='sm' onClick={() => this.setState({ category: 'Algo' })} active={this.state.category === 'Algo'}>
+                        </button>
+                        <button onClick={() => this.setState({ category: 'Algo' })} active={this.state.category === 'Algo'}>
                             Algorithms
-                        </Button>
-                    </div> */}
+                        </button>
+                    </div>
                     {/* <hr /> */}
                     {/* To Do: Add cards to show off projects */}
                     <div className='projects-cards'>
-                        <Row>
-                            {this.props.projects.map((project) => {
-                                if (this.state.category === 'All' || project.cardTags === this.state.category) {
-                                    return <ProjectsCard key={project.id} {...project} bgColor={projectCardBackgroundColors[0]} />;
-                                } else {
-                                    return undefined;
-                                }
-                            })}
-                        </Row>
+                        {this.state.projects.map((project) => {
+                            // if (this.state.category === 'All' || project.cardTags === this.state.category) {
+                            return <ProjectsCard key={project.id} {...project} bgColor={projectCardBackgroundColors[0]} />;
+                            // } else {
+                            //     return undefined;
+                            // }
+                        })}
                     </div>
                 </div>
             </div>

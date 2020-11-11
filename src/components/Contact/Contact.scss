@@ -4,10 +4,8 @@ textarea {
     border: none;
     border-bottom: 1px #c9c9c9 solid;
 
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-
-    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
 
     &:focus {
         border-bottom: 1px #f55951 solid;
@@ -16,7 +14,15 @@ textarea {
 
 textarea {
     resize: none;
-    overflow: hidden;
+
+    // hide scrollbar for Chrome, Safari, and Opera
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    // hide scrollbar for IE, Edge, and Firefox
+    -ms-overflow-style: none; // IE and Edge
+    scrollbar-width: none; // Firefox
 }
 
 .contact-wrapper {
@@ -32,13 +38,6 @@ textarea {
     textarea:focus,
     input:focus {
         outline: none;
-    }
-
-    .contact-title {
-        font-size: 1.3rem;
-        font-weight: bold;
-        letter-spacing: 0.55rem;
-        margin-bottom: 4rem;
     }
 
     .contact-left {
@@ -75,14 +74,17 @@ textarea {
             }
 
             .custom-btn {
-                height: 3.7rem;
-                width: 7.1rem;
+                height: 5rem;
+                width: 10rem;
 
+                color: white;
                 font-weight: bold;
                 letter-spacing: 0.35rem;
 
                 background-color: #543c52;
-                border-color: #543c52;
+                border: none;
+                border-radius: 0.5rem;
+                box-shadow: none;
             }
         }
     }
@@ -99,10 +101,10 @@ textarea {
             align-items: flex-start;
 
             .icon {
-                width: 3.5rem;
-                height: 3.5rem;
+                width: 5rem;
+                height: 5rem;
                 border: 1px #c9c9c9 solid;
-                border-radius: 0.2rem;
+                border-radius: 0.5rem;
 
                 color: #585858;
 

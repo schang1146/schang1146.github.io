@@ -17,8 +17,8 @@ class Header extends Component {
                         <FontAwesomeIcon icon={faCode} className='icon' />
                         &nbsp;Sammy Chang
                     </h1>
-                    <h2 className='header-description'>I'm a Web Developer</h2>
-                    <p className='header-textarea'>lorem ipsum...(about)</p>
+                    {/* <h2 className='header-description'>I'm a Web Developer</h2>
+                    <p className='header-textarea'>lorem ipsum...(about)</p> */}
                 </div>
             </div>
         );

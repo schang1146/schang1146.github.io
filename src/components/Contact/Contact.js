@@ -6,9 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-// import reactstrap components
-import { Button } from 'reactstrap';
-
 // import styling
 import './Contact.scss';
 
@@ -23,7 +20,7 @@ class Contact extends Component {
             <div id='contact' className='contact-wrapper'>
                 <div className='contact-left'>
                     <h2 className='contact-title'>GET IN TOUCH</h2>
-                    <form className='contact-form' onSubmit={(e) => console.log('hello')}>
+                    <form className='contact-form' onSubmit={(e) => this.sendMsg(e)}>
                         <span className='contact-form-top'>
                             <input type='text' name='yourName' id='yourName' placeholder='Name' />
                             <input type='email' name='yourEmail' id='yourEmail' placeholder='Email' />
@@ -31,9 +28,9 @@ class Contact extends Component {
                         <span className='contact-form-bottom'>
                             <textarea name='yourMessage' id='yourMessage' placeholder='Message' />
                         </span>
-                        <Button className='custom-btn' onClick={(e) => this.sendMsg(e)}>
+                        <button className='custom-btn' onClick={(e) => this.sendMsg(e)}>
                             SEND
-                        </Button>
+                        </button>
                     </form>
                 </div>
                 <div className='contact-right'>
