@@ -4,6 +4,23 @@
     width: 90%;
     padding: 2rem;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .projects-card-info {
+        width: 47.5%;
+    }
+
+    .projects-card-image {
+        width: 47.5%;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
     .projects-card-tag {
         background-color: pink;
         padding: 0.5rem;
