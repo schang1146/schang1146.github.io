@@ -9,9 +9,6 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 // import styling
 import './ProjectsCard.scss';
 
-// import images
-import test from '../../../assets/images/trivia-in-tandem/TriviaView.png';
-
 class ProjectsCard extends Component {
     render() {
         console.log(this.props);
@@ -33,7 +30,7 @@ class ProjectsCard extends Component {
                     </div>
                 </div>
                 <div className='projects-card-image'>
-                    <img src={test} alt=''></img>
+                    <img src={this.props.image_url[0]} alt=''></img>
                 </div>
             </article>
         );
