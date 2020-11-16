@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import './ProjectsCard.scss';
 
 // import images
-import test from '../../../assets/images/trivia-in-tandem/LandingView.png';
+import test from '../../../assets/images/trivia-in-tandem/TriviaView.png';
 
 class ProjectsCard extends Component {
     render() {
