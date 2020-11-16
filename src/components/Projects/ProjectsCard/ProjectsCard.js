@@ -1,6 +1,11 @@
 // import dependencies
 import React, { Component } from 'react';
 
+// import fontawesome icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+
 // import styling
 import './ProjectsCard.scss';
 
@@ -18,7 +23,14 @@ class ProjectsCard extends Component {
                         return <span className='projects-card-tag'>{tag}</span>;
                     })}
                     <div className='projects-card-description'>{this.props.description}</div>
-                    <div className='projects-card-icons'></div>
+                    <div className='projects-card-icons'>
+                        <a className='icon' href={this.props.github_url} target='_blank' rel='noopener noreferrer'>
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                        <a className='icon' href={this.props.url} target='_blank' rel='noopener noreferrer'>
+                            <FontAwesomeIcon icon={faExternalLinkAlt} />
+                        </a>
+                    </div>
                 </div>
                 <div className='projects-card-image'>
                     <img src={test} alt=''></img>

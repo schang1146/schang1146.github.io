@@ -5,8 +5,8 @@ const PORTFOLIO_DATA = [
         description: 'Wedding Planner',
         image_url: 'https://i.stack.imgur.com/aJCJf.png',
         tags: ['React', 'React-Redux', 'React Router', 'Reactstrap', 'Knex.js', 'Express', 'PostgreSQL'],
-        url: '',
-        github_url: '',
+        url: 'https://labspt5weddingbells.netlify.app/',
+        github_url: 'https://github.com/Lambda-School-Labs/wedding-bells-fe',
     },
     {
         id: 2,

@@ -3,18 +3,34 @@
     border: 1px #c9c9c9 solid;
     width: 100%;
 
-    padding: 2rem;
+    padding: 3rem;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     .projects-card-info {
-        width: 47.5%;
+        width: 35%;
+
+        .projects-card-title {
+            font-size: 3rem;
+            color: #361d32;
+        }
+
+        .projects-card-description {
+            margin-top: 2rem;
+        }
+
+        .projects-card-icons {
+            margin-top: 2rem;
+            .icon {
+                margin-right: 0.75rem;
+            }
+        }
     }
 
     .projects-card-image {
-        width: 47.5%;
+        width: 60%;
 
         img {
             max-width: 100%;
@@ -24,10 +40,12 @@
 
     .projects-card-tag {
         display: inline-block;
-        background-color: pink;
+        background-color: #f55951;
+        color: #ffffff;
         padding: 0.5rem;
         border-radius: 0.5rem;
+        margin-top: 1rem;
         margin-right: 1rem;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 }
