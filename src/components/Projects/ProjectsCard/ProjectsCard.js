@@ -11,7 +11,6 @@ import './ProjectsCard.scss';
 
 class ProjectsCard extends Component {
     render() {
-        console.log(this.props);
         return (
             <article className='projects-card-wrapper'>
                 <div className='projects-card-info'>

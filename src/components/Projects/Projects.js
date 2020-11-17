@@ -41,7 +41,7 @@ class Projects extends Component {
             <div id='projects' className='projects-wrapper'>
                 <div className='projects-content'>
                     <h2 className='projects-description'>PROJECTS</h2>
-                    <div className='projects-tags'>
+                    {/* <div className='projects-tags'>
                         <button color='primary' onClick={() => this.setState({ category: 'All' })} active={this.state.category === 'All'}>
                             All
                         </button>
@@ -51,7 +51,7 @@ class Projects extends Component {
                         <button onClick={() => this.setState({ category: 'Algo' })} active={this.state.category === 'Algo'}>
                             Algorithms
                         </button>
-                    </div>
+                    </div> */}
                     {/* <hr /> */}
                     {/* To Do: Add cards to show off projects */}
                     <div className='projects-cards'>

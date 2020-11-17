@@ -1,7 +1,10 @@
+@use 'src/variables' as v;
+
 .navbar-wrapper {
     position: fixed;
-    top: 1rem;
+    top: 0rem;
     margin: 0 auto;
+    background-color: v.$theme-bg1-color;
 
     // flexbox
     display: flex;

@@ -12,7 +12,7 @@ class HomeView extends Component {
     render() {
         return (
             <div className='home-view-wrapper'>
-                <Navbar />
+                {/* <Navbar /> */}
                 <Header />
                 {/* <About /> */}
                 <Projects />
