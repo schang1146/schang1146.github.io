@@ -9,6 +9,10 @@
     flex-direction: row;
     justify-content: space-between;
 
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
     .projects-card-info {
         width: 35%;
 
@@ -24,7 +28,7 @@
         .projects-card-icons {
             margin-top: 2rem;
             .icon {
-                margin-right: 0.75rem;
+                margin-right: 1rem;
             }
         }
     }

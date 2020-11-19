@@ -10,6 +10,36 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import './ProjectsCard.scss';
 
 class ProjectsCard extends Component {
+    constructor() {
+        super();
+
+        this.state = {
+            imageId: 0,
+        };
+    }
+
+    nextImage(e) {
+        e.preventDefault();
+        if (this.state.imageId === this.props.image_url.length - 1) {
+            this.setState({ imageId: 0 });
+        } else {
+            this.setState({
+                imageId: this.state.imageId + 1,
+            });
+        }
+    }
+
+    prevImage(e) {
+        e.preventDefault();
+        if (this.state.imageId === 0) {
+            this.setState({ imageId: this.props.image_url.length - 1 });
+        } else {
+            this.setState({
+                imageId: this.state.imageId - 1,
+            });
+        }
+    }
+
     render() {
         return (
             <article className='projects-card-wrapper'>
@@ -29,7 +59,9 @@ class ProjectsCard extends Component {
                     </div>
                 </div>
                 <div className='projects-card-image'>
-                    <img src={this.props.image_url[0]} alt=''></img>
+                    <button onClick={(e) => this.prevImage(e)}>{'<'}</button>
+                    <img src={this.props.image_url[this.state.imageId]} alt=''></img>
+                    <button onClick={(e) => this.nextImage(e)}>{'>'}</button>
                 </div>
             </article>
         );

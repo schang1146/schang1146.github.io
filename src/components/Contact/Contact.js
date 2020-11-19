@@ -1,5 +1,6 @@
 // import dependencies
 import React, { Component } from 'react';
+import emailjs from 'emailjs-com';
 
 // import fontawesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,9 +10,36 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Contact.scss';
 
 class Contact extends Component {
-    sendMsg(e) {
+    constructor() {
+        super();
+
+        this.state = {
+            yourName: '',
+            yourEmail: '',
+            yourMessage: '',
+        };
+    }
+
+    handleSendMsg(e) {
         e.preventDefault();
-        console.log('submit');
+        // if (this.state.yourName !== '' && this.state.yourEmail !== '' && this.state.yourMessage !== '') {
+        //     emailjs
+        //         .send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, { from_name: this.state.yourName, reply_to: this.state.yourEmail, message: this.state.yourMessage }, process.env.REACT_APP_EMAILJS_USER_ID)
+        //         .then((res) => {
+        //             console.log('Email Successful!', res.status, res.text);
+        //         })
+        //         .catch((err) => {
+        //             console.error('Email Unsuccessful!', err);
+        //         });
+        // }
+        alert('IS CAPTCHA CAPTCHA-ING YET?!');
+
+        this.setState({ yourName: '', yourEmail: '', yourMessage: '' });
+    }
+
+    handleTextChange(e) {
+        e.preventDefault();
+        this.setState({ ...this.state, [e.target.name]: e.target.value });
     }
 
     render() {
@@ -19,17 +47,17 @@ class Contact extends Component {
             <div id='contact' className='contact-wrapper'>
                 <div className='contact-left'>
                     <h2 className='contact-title'>GET IN TOUCH</h2>
-                    <form className='contact-form' onSubmit={(e) => this.sendMsg(e)}>
+                    <form className='contact-form' action='?' method='POST' onSubmit={(e) => this.handleSendMsg(e)}>
                         <span className='contact-form-top'>
-                            <input type='text' name='yourName' id='yourName' placeholder='Name' />
-                            <input type='email' name='yourEmail' id='yourEmail' placeholder='Email' />
+                            <input type='text' name='yourName' id='yourName' placeholder='Name' onChange={(e) => this.handleTextChange(e)} value={this.state.yourName} />
+                            <input type='email' name='yourEmail' id='yourEmail' placeholder='Email' onChange={(e) => this.handleTextChange(e)} value={this.state.yourEmail} />
                         </span>
                         <span className='contact-form-bottom'>
-                            <textarea name='yourMessage' id='yourMessage' placeholder='Message' />
+                            <textarea name='yourMessage' id='yourMessage' placeholder='Message' onChange={(e) => this.handleTextChange(e)} value={this.state.yourMessage} />
                         </span>
-                        <button className='custom-btn' onClick={(e) => this.sendMsg(e)}>
-                            SEND
-                        </button>
+                        <div className='g-recaptcha' data-sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY_V2_CHECKBOX}></div>
+                        <br />
+                        <input type='submit' value='SEND' />
                     </form>
                 </div>
                 <div className='contact-right'>
