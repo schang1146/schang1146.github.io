@@ -1,0 +1,17 @@
+@use 'src/variables' as v;
+
+.header-wrapper {
+    // max-width: 70%;
+    margin: 13vh auto;
+
+    .header-description {
+        margin-top: 7vh;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .header-textarea {
+        margin-top: 13vh;
+        font-size: 2rem;
+    }
+}

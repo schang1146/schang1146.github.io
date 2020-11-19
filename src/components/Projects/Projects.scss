@@ -1,0 +1,39 @@
+.projects-wrapper {
+    .projects-description {
+        margin-top: 7vh;
+    }
+
+    .projects-content {
+        // flexbox
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .projects-cards {
+            margin-top: 2.5rem;
+            // flexbox
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+
+            width: 100%;
+        }
+
+        .projects-tags {
+            // flexbox
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+
+            button {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}

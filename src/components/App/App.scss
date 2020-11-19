@@ -1,22 +1,53 @@
-.App {
-  text-align: center;
+@use 'src/variables' as v;
+
+.app-wrapper {
+    // background
+    background-color: v.$theme-bg1-color;
+
+    // font
+    font-size: 2rem;
+    color: rgba(88, 88, 88);
+
+    max-width: 70%;
+    margin: 0 auto;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
+a {
+    color: v.$theme-font-color;
+    &:hover {
+        color: v.$theme-font-color;
+        text-decoration: none;
+        animation: fadeOut ease 1s forwards;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+    font-size: 1.2rem;
 }
 
-.App-link {
-  color: #09d3ac;
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.45rem;
+    margin-bottom: 3rem;
+}
+
+hr {
+    width: 100%;
+    border-color: v.$theme-font-color;
+    margin: 25px 0;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.25;
+    }
 }

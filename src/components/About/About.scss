@@ -1,0 +1,43 @@
+@use 'src/variables' as v;
+
+.about-wrapper {
+    height: 100vh;
+
+    // flexbox
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-wrapper .about-content {
+    width: 80%;
+
+    // flexbox
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-wrapper .about-content .about-bottom {
+    // flexbox
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-wrapper .about-content .about-bottom .about-left {
+    height: 500px;
+    width: 40%;
+    padding: 50px;
+}
+
+.about-wrapper .about-content .about-bottom .about-right {
+    width: 60%;
+    padding: 50px;
+}
