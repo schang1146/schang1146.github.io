@@ -32,9 +32,9 @@ class Projects extends Component {
         };
     }
 
-    componentDidMount() {
-        this.props.getProjects();
-    }
+    // componentDidMount() {
+    //     this.props.getProjects();
+    // }
 
     render() {
         return (

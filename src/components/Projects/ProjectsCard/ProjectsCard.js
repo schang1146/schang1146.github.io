@@ -46,7 +46,11 @@ class ProjectsCard extends Component {
                 <div className='projects-card-info'>
                     <h3 className='projects-card-title'>{this.props.title.toUpperCase()}</h3>
                     {this.props.tags.map((tag) => {
-                        return <span className='projects-card-tag'>{tag}</span>;
+                        return (
+                            <span key={tag} className='projects-card-tag'>
+                                {tag}
+                            </span>
+                        );
                     })}
                     <div className='projects-card-description'>{this.props.description}</div>
                     <div className='projects-card-icons'>
@@ -59,9 +63,13 @@ class ProjectsCard extends Component {
                     </div>
                 </div>
                 <div className='projects-card-image'>
-                    <button onClick={(e) => this.prevImage(e)}>{'<'}</button>
+                    <button className='carousel-button prev' onClick={(e) => this.prevImage(e)}>
+                        {'<'}
+                    </button>
                     <img src={this.props.image_url[this.state.imageId]} alt=''></img>
-                    <button onClick={(e) => this.nextImage(e)}>{'>'}</button>
+                    <button className='carousel-button next' onClick={(e) => this.nextImage(e)}>
+                        {'>'}
+                    </button>
                 </div>
             </article>
         );

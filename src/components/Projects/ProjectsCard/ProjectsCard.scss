@@ -9,10 +9,6 @@
     flex-direction: row;
     justify-content: space-between;
 
-    &:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-
     .projects-card-info {
         width: 35%;
 
@@ -40,6 +36,28 @@
             max-width: 100%;
             height: auto;
         }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.2);
+            border: none;
+            color: white;
+            position: relative;
+            font-size: 3rem;
+            font-weight: 700;
+            width: 5rem;
+            height: 5rem;
+            outline: none;
+        }
+
+        .prev {
+            top: calc(50% - 2.5rem);
+            left: 0;
+        }
+
+        .next {
+            top: calc(-50% + 2.5rem);
+            right: calc(-100% + 5rem);
+        }
     }
 
     .projects-card-tag {
@@ -51,5 +69,20 @@
         margin-top: 1rem;
         margin-right: 1rem;
         font-size: 1.3rem;
+    }
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+
+        .projects-card-image {
+            .prev {
+                left: calc(-100% + 5rem);
+            }
+
+            .next {
+                right: 0;
+            }
+        }
     }
 }

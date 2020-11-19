@@ -17,22 +17,22 @@ class Contact extends Component {
             yourName: '',
             yourEmail: '',
             yourMessage: '',
+            verifyCallback: false,
         };
     }
 
     handleSendMsg(e) {
         e.preventDefault();
-        // if (this.state.yourName !== '' && this.state.yourEmail !== '' && this.state.yourMessage !== '') {
-        //     emailjs
-        //         .send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, { from_name: this.state.yourName, reply_to: this.state.yourEmail, message: this.state.yourMessage }, process.env.REACT_APP_EMAILJS_USER_ID)
-        //         .then((res) => {
-        //             console.log('Email Successful!', res.status, res.text);
-        //         })
-        //         .catch((err) => {
-        //             console.error('Email Unsuccessful!', err);
-        //         });
-        // }
-        alert('IS CAPTCHA CAPTCHA-ING YET?!');
+        if (this.state.yourName !== '' && this.state.yourEmail !== '' && this.state.yourMessage !== '') {
+            emailjs
+                .send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, { from_name: this.state.yourName, reply_to: this.state.yourEmail, message: this.state.yourMessage }, process.env.REACT_APP_EMAILJS_USER_ID)
+                .then((res) => {
+                    console.log('Email Successful!');
+                })
+                .catch((err) => {
+                    console.error('Email Unsuccessful!');
+                });
+        }
 
         this.setState({ yourName: '', yourEmail: '', yourMessage: '' });
     }
@@ -55,9 +55,12 @@ class Contact extends Component {
                         <span className='contact-form-bottom'>
                             <textarea name='yourMessage' id='yourMessage' placeholder='Message' onChange={(e) => this.handleTextChange(e)} value={this.state.yourMessage} />
                         </span>
-                        <div className='g-recaptcha' data-sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY_V2_CHECKBOX}></div>
+                        {/* <div className='g-recaptcha' verifyCallback={this.verifyCallback} data-sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY_V2_CHECKBOX}></div> */}
                         <br />
-                        <input type='submit' value='SEND' />
+                        {/* <input type='submit' value='SEND' /> */}
+                        <button className='custom-btn' onClick={(e) => this.handleSendMsg(e)}>
+                            SEND
+                        </button>
                     </form>
                 </div>
                 <div className='contact-right'>
